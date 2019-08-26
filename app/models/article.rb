@@ -1,12 +1,22 @@
-# 👇Bさん
 class Article < ApplicationRecord
-  validates_presence_of(:title)
+  validates :title, presence: true
 end
 
-# 👇Aさん
+# # 👇Bさん
 # class Article < ApplicationRecord
+# <<<<<<< HEAD
 #   validates_presence_of(:title)
 # end
 
-# class Article < ApplicationRecord
+# # 👇Aさん
+# # class Article < ApplicationRecord
+# #   validates_presence_of(:title)
+# # end
+
+# =======
+#   validates :title, presence: true
 # end
+
+# >>>>>>> master
+# # class Article < ApplicationRecord
+# # end
